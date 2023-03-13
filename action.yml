@@ -1,4 +1,4 @@
-name: 'setup-unity-cache-github-action'
+name: 'Unity cache setup'
 description: 'This action sets up a cache in Unity.'
 inputs:
   upm-cache-root:
