@@ -1,0 +1,35 @@
+name: 'setup-unity-cache-github-action'
+description: 'This action sets up a cache in Unity.'
+inputs:
+  upm-cache-root:
+    description: >
+      Specifies the root directory of the global cache to be used by the Package Manager.
+      If omitted, the Unity default cache directory is used.
+    required: false
+  upm-npm-cache-path:
+    description: >
+      Specify the absolute path to the location where you want Package Manager to store package metadata and tarballs.
+      By default, this is the npm subfolder under the global cache root.
+    required: false
+  upm-cache-path:
+    description: >
+      Specify the absolute path to the location where you want Package Manager to store the uncompressed contents of package tarballs.
+      By default, this is the packages subfolder under the global cache root.
+    required: false
+  upm-git-lfs-cache-path:
+    description: >
+      Specify the absolute path to the location where you want Package Manager to store the Git LFS cache.
+      By setting this path, you automatically enable the Git LFS cache.
+    required: false
+  upm-enable-git-lfs-cache:
+    description: >
+      Specify any value except true to enable the Git LFS cache.
+      Package Manager will use the git-lfs subfolder under the global cache root.
+    required: false
+    default: false
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
+branding:
+  icon: "box"
+  color: "orange"
