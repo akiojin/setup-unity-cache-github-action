@@ -1,6 +1,6 @@
 {
   "name": "@akiojin/setup-unity-cache-github-action",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "This action sets up a cache in Unity.",
   "main": "dist/index.js",
   "repository": {
