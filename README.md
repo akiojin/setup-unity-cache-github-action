@@ -1,5 +1,7 @@
 # setup-unity-cache-github-action
 
+![BuildAndTest](https://github.com/akiojin/setup-unity-cache-github-action/actions/workflows/BuildAndTest.yml/badge.svg)
+
 This action sets up a cache in Unity.
 
 ## Usage
@@ -36,13 +38,13 @@ This action sets up a cache in Unity.
 
 ### Inputs
 
-| Name                       | Required | Type      | Default | Description                                                                                                                                                                                              |
-| -------------------------- | -------- | --------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `upm-cache-root`           | `false`  | `string`  |         | Specifies the root directory of the global cache to be used by the Package Manager. If omitted, the Unity default cache directory is used.                                                               |
-| `upm-npm-cache-path`       | `false`  | `string`  |         | Specify the absolute path to the location where you want Package Manager to store package metadata and tarballs. By default, this is the npm subfolder under the global cache root.                      |
-| `upm-cache-path`           | `false`  | `string`  |         | Specify the absolute path to the location where you want Package Manager to store the uncompressed contents of package tarballs. By default, this is the packages subfolder under the global cache root. |
-| `upm-git-lfs-cache-path`   | `false`  | `string`  |         | Specify the absolute path to the location where you want Package Manager to store the Git LFS cache. By setting this path, you automatically enable the Git LFS cache.                                   |
-| `upm-enable-git-lfs-cache` | `false`  | `boolean` | `false` | Specify any value except true to enable the Git LFS cache. Package Manager will use the git-lfs subfolder under the global cache root.                                                                   |
+| Name                       | Required | Type      | Default | Description                                                                                                                                                                                                |
+| -------------------------- | -------- | --------- | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `upm-cache-root`           | `false`  | `string`  |         | Specifies the root directory of the global cache to be used by the Package Manager. If omitted, the Unity default cache directory is used.                                                                 |
+| `upm-npm-cache-path`       | `false`  | `string`  |         | Specify the absolute path to the location where you want Package Manager to store package metadata and tarballs. By default, this is the `npm` subfolder under the global cache root.                      |
+| `upm-cache-path`           | `false`  | `string`  |         | Specify the absolute path to the location where you want Package Manager to store the uncompressed contents of package tarballs. By default, this is the `packages` subfolder under the global cache root. |
+| `upm-git-lfs-cache-path`   | `false`  | `string`  |         | Specify the absolute path to the location where you want Package Manager to store the Git LFS cache. By setting this path, you automatically enable the Git LFS cache.                                     |
+| `upm-enable-git-lfs-cache` | `false`  | `boolean` | `false` | Specify any value except true to enable the Git LFS cache. Package Manager will use the `git-lfs` subfolder under the global cache root.                                                                   |
 
 ## License
 

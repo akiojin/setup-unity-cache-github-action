@@ -9,12 +9,12 @@ inputs:
   upm-npm-cache-path:
     description: >
       Specify the absolute path to the location where you want Package Manager to store package metadata and tarballs.
-      By default, this is the npm subfolder under the global cache root.
+      By default, this is the `npm` subfolder under the global cache root.
     required: false
   upm-cache-path:
     description: >
       Specify the absolute path to the location where you want Package Manager to store the uncompressed contents of package tarballs.
-      By default, this is the packages subfolder under the global cache root.
+      By default, this is the `packages` subfolder under the global cache root.
     required: false
   upm-git-lfs-cache-path:
     description: >
@@ -24,7 +24,7 @@ inputs:
   upm-enable-git-lfs-cache:
     description: >
       Specify any value except true to enable the Git LFS cache.
-      Package Manager will use the git-lfs subfolder under the global cache root.
+      Package Manager will use the `git-lfs` subfolder under the global cache root.
     required: false
     default: false
 runs:
