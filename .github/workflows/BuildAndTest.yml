@@ -33,3 +33,12 @@ jobs:
           echo "UPM_CACHE_PATH=$UPM_CACHE_PATH"
           echo "UPM_GIT_LFS_CACHE_PATH=$UPM_GIT_LFS_CACHE_PATH"
           echo "UPM_ENABLE_GIT_LFS_CACHE=$UPM_ENABLE_GIT_LFS_CACHE"
+        if: ${{ matrix.OS != 'windows-latest' }}
+
+      - run: |
+          echo "UPM_CACHE_ROOT=$Env:UPM_CACHE_ROOT"
+          echo "UPM_NPM_CACHE_PATH=$Env:UPM_NPM_CACHE_PATH"
+          echo "UPM_CACHE_PATH=$Env:UPM_CACHE_PATH"
+          echo "UPM_GIT_LFS_CACHE_PATH=$Env:UPM_GIT_LFS_CACHE_PATH"
+          echo "UPM_ENABLE_GIT_LFS_CACHE=$Env:UPM_ENABLE_GIT_LFS_CACHE"
+        if: ${{ matrix.OS == 'windows-latest' }}
