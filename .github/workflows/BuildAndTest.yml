@@ -23,6 +23,8 @@ jobs:
         OS: [ ubuntu-latest, macos-latest, windows-latest ]
 
     steps:
+      - uses: actions/checkout@v3
+
       - uses: ./
         with:
           upm-cache-root: ${{ runner.temp }}/cache
